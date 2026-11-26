@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <title>Planet Explorer</title>
+
+    
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="navbar container">
+
+            <a class="logo" href="#beranda">Explorer</a>
+
+            <form class="form-cari">
+                <input id="cari" type="search" autocomplete="off" placeholder="Cari..."
+                    aria-label="Mencari sesuatu menggunakan kata kunci">
+                <div id="hasilCariNav" class="dropdown-cari tersembunyi"></div>
+            </form>
+
+            <button type="button" class="btn-menu-hp" id="btnMenuHp" aria-label="Buka Menu">
+                ☰
+            </button>
+
+            <nav class="nav-utama" id="navUtama" aria-label="Menu Utama">
+                <ul class="menu-utama">
+                    <li><a href="#matahari">Matahari</a></li>
+                    <li><a href="#planet">8 Planet</a></li>
+                    <li><a href="#benda">Benda Langit</a></li>
+                    <li><a href="#fenomena">Fenomena</a></li>
+                    <li><a href="#eksplorasi">Eksplorasi</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero-section">
+            <div class="wrap">
+                <div class="hero">
+
+                    <h1>Jelajahi Keajaiban <span class="gradient">Tata Surya Kita</span></h1>
+
+                    <p><strong>Planet Explorer</strong> menghadirkan pengetahuan tentang Matahari, delapan planet,
+                        Bulan, misi antariksa, dan berbagai fenomena luar angkasa dengan bahasa yang sederhana, visual
+                        menarik, dan mudah dipahami tanpa membosankan.</p>
+
+                    <div class="hero-buttons">
+                        <a class="btn-explore" href="#planet">Mulai Jelajah &rarr;</a>
+                        <a class="btn-quiz" href="#quiz">Coba Kuis Tata Surya</a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="item">
+                            <span class="num white">8</span>
+                            <span class="label">Planet Utama</span>
+                        </div>
+                        <div class="item">
+                            <span class="num amber">4,6 M</span>
+                            <span class="label">Tahun Usia Tata Surya</span>
+                        </div>
+                        <div class="item">
+                            <span class="num sky">290+</span>
+                            <span class="label">Satelit Alami</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 1: MENGENAL TATA SURYA
+             ================================================================== -->
+        <section id="tata-surya" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <div class="kepala-bagian tengah">
+                    <span class="label-bagian teks-biru">Gambaran Umum</span>
+                    <h2 class="judul-bagian">Mengenal Tata Surya Kita</h2>
+                    <p class="deskripsi-bagian">
+                        Tata Surya adalah sistem antariksa yang terdiri atas <strong>Matahari</strong> sebagai pusatnya dan seluruh benda langit yang terikat oleh gaya gravitasinya. Sistem ini terbentuk sekitar <strong>4,6 miliar tahun lalu</strong> dan terletak di <strong>Lengan Orion, Galaksi Bima Sakti</strong>.
+                    </p>
+                </div>
+
+                <div class="grid-empat">
+                    <article class="kartu-kosmik">
+                        <div class="lencana-nomor nomor-kuning">01</div>
+                        <h3 class="judul-kartu">Tata Surya Bagian Dalam</h3>
+                        <p class="subjudul-kartu">Merkurius, Venus, Bumi, Mars</p>
+                        <p class="teks-kartu">Dihuni planet kebumian berbatu yang berukuran relatif kecil, memiliki permukaan padat, sedikit satelit, dan tidak memiliki cincin.</p>
+                    </article>
+
+                    <article class="kartu-kosmik">
+                        <div class="lencana-nomor nomor-abu">02</div>
+                        <h3 class="judul-kartu">Sabuk Asteroid</h3>
+                        <p class="subjudul-kartu">Antara Orbit Mars & Jupiter</p>
+                        <p class="teks-kartu">Wilayah berbentuk cincin berisi jutaan bongkahan batu dan logam sisa pembentukan awal Tata Surya, termasuk planet kerdil Ceres.</p>
+                    </article>
+
+                    <article class="kartu-kosmik">
+                        <div class="lencana-nomor nomor-biru">03</div>
+                        <h3 class="judul-kartu">Tata Surya Bagian Luar</h3>
+                        <p class="subjudul-kartu">Jupiter, Saturnus, Uranus, Neptunus</p>
+                        <p class="teks-kartu">Dikuasai planet raksasa gas dan raksasa es yang berukuran sangat besar, memiliki puluhan bulan, serta dikelilingi sistem cincin.</p>
+                    </article>
+
+                    <article class="kartu-kosmik">
+                        <div class="lencana-nomor nomor-ungu">04</div>
+                        <h3 class="judul-kartu">Sabuk Kuiper & Awan Oort</h3>
+                        <p class="subjudul-kartu">Batas Terluar Tata Surya</p>
+                        <p class="teks-kartu">Wilayah beku di luar orbit Neptunus yang menjadi rumah bagi Pluto, planet kerdil lainnya, serta tempat asal komet-komet es.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 2: MATAHARI & BULAN (#matahari)
+             ================================================================== -->
+        <section id="matahari" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <div class="kepala-bagian tengah">
+                    <span class="label-bagian teks-kuning">Bintang Induk & Satelit Bumi</span>
+                    <h2 class="judul-bagian">Matahari & Bulan</h2>
+                </div>
+
+                <div class="grid-dua">
+                    <!-- Kartu Matahari -->
+                    <article class="kartu-kosmik kartu-bintang">
+                        <div>
+                            <div class="profil-benda">
+                                <div class="bingkai-foto cahaya-matahari">
+                                    <img src="image/matahari.png" alt="Foto Matahari" class="foto-bulat">
+                                </div>
+                                <div>
+                                    <span class="tag-kategori tag-kuning">Bintang Katai Kuning</span>
+                                    <h3 class="judul-kartu-besar">Matahari</h3>
+                                    <p class="teks-kartu">Bola gas panas raksasa (hidrogen dan helium) di pusat Tata Surya yang menjadi sumber cahaya, panas, dan energi utama bagi kehidupan di Bumi.</p>
+                                </div>
+                            </div>
+
+                            <div class="kotak-statistik-benda">
+                                <div>
+                                    <span class="label-kecil">Diameter</span>
+                                    <strong class="nilai-tebal">1,39 Juta km</strong>
+                                </div>
+                                <div>
+                                    <span class="label-kecil">Suhu Permukaan</span>
+                                    <strong class="nilai-tebal teks-kuning">±5.500 °C</strong>
+                                </div>
+                                <div>
+                                    <span class="label-kecil">Porsi Massa</span>
+                                    <strong class="nilai-tebal">99,86%</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kotak-catatan catatan-kuning">
+                            <strong>Fakta Unik:</strong> Ukuran Matahari setara dengan menampung sekitar <strong>1,3 juta planet Bumi</strong> di dalamnya!
+                        </div>
+                    </article>
+
+                    <!-- Kartu Bulan -->
+                    <article class="kartu-kosmik kartu-bintang">
+                        <div>
+                            <div class="profil-benda">
+                                <div class="bingkai-foto cahaya-bulan">
+                                    <img src="image/bulan.png" alt="Foto Bulan" class="foto-bulat">
+                                </div>
+                                <div>
+                                    <span class="tag-kategori tag-biru">Satelit Alami Bumi</span>
+                                    <h3 class="judul-kartu-besar">Bulan</h3>
+                                    <p class="teks-kartu">Satu-satunya satelit alami Bumi yang memantulkan cahaya Matahari. Gravitasinya mengatur pasang surut air laut dan menjaga kestabilan iklim Bumi.</p>
+                                </div>
+                            </div>
+
+                            <div class="kotak-statistik-benda">
+                                <div>
+                                    <span class="label-kecil">Jarak ke Bumi</span>
+                                    <strong class="nilai-tebal">384.400 km</strong>
+                                </div>
+                                <div>
+                                    <span class="label-kecil">Diameter</span>
+                                    <strong class="nilai-tebal teks-biru">3.474 km</strong>
+                                </div>
+                                <div>
+                                    <span class="label-kecil">Periode Orbit</span>
+                                    <strong class="nilai-tebal">27,3 Hari</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kotak-catatan catatan-biru">
+                            <strong>Fakta Unik:</strong> Kita selalu melihat sisi Bulan yang sama dari Bumi karena waktu rotasi dan revolusinya sama persis (<em>tidal locking</em>).
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 3: JELAJAH 8 PLANET UTAMA (#planet)
+             ================================================================== -->
+        <section id="planet" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <div class="kepala-planet">
+                    <div>
+                        <span class="label-bagian teks-biru">Eksplorasi Inti</span>
+                        <h2 class="judul-bagian">Jelajah 8 Planet Utama</h2>
+                        <p class="deskripsi-bagian rata-kiri">Pilih kategori atau klik tombol <strong>Detail Planet</strong> untuk melihat struktur, lama rotasi, revolusi, dan fakta unik tiap planet.</p>
+                    </div>
+
+                    <div id="filterPlanet" class="grup-filter">
+                        <button type="button" data-filter="all" class="tombol-filter aktif">Semua (8)</button>
+                        <button type="button" data-filter="Kebumian" class="tombol-filter">Kebumian</button>
+                        <button type="button" data-filter="Raksasa Gas" class="tombol-filter">Raksasa Gas</button>
+                        <button type="button" data-filter="Raksasa Es" class="tombol-filter">Raksasa Es</button>
+                    </div>
+                </div>
+
+                <!-- Grid 8 Planet (Dirender otomatis oleh script.js) -->
+                <div id="gridPlanet" class="grid-empat"></div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 4: BENDA LANGIT SEJENIS PLANET (#benda)
+             ================================================================== -->
+        <section id="benda" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <div class="kepala-bagian tengah">
+                    <span class="label-bagian teks-ungu">Wawasan Tambahan</span>
+                    <h2 class="judul-bagian">Benda Langit Sejenis Planet</h2>
+                    <p class="deskripsi-bagian">Selain 8 planet utama di Tata Surya, para astronom juga mengelompokkan planet kerdil serta ribuan planet di luar Tata Surya (eksoplanet).</p>
+                </div>
+
+                <div class="grup-tab">
+                    <button type="button" id="tombolTabKerdil" class="tombol-tab aktif">
+                        Planet Kerdil (Dwarf Planets)
+                    </button>
+                    <button type="button" id="tombolTabEkso" class="tombol-tab">
+                        Eksoplanet (Luar Tata Surya)
+                    </button>
+                </div>
+
+                <!-- Tab 1: Planet Kerdil -->
+                <div id="kontenTabKerdil">
+                    <div class="grid-lima">
+                        <article class="kartu-kosmik kartu-kecil">
+                            <span class="label-wilayah teks-ungu">Sabuk Kuiper</span>
+                            <h3 class="judul-kartu">Pluto</h3>
+                            <p class="teks-kartu-kecil">Dulunya dikenal sebagai planet ke-9 hingga tahun 2006. Memiliki 5 bulan dan dataran es nitrogen berbentuk hati yang ikonik.</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-kecil">
+                            <span class="label-wilayah teks-kuning">Sabuk Asteroid</span>
+                            <h3 class="judul-kartu">Ceres</h3>
+                            <p class="teks-kartu-kecil">Satu-satunya planet kerdil di Tata Surya bagian dalam dan merupakan objek terbesar di Sabuk Asteroid antara Mars & Jupiter.</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-kecil">
+                            <span class="label-wilayah teks-ungu">Piringan Tersebar</span>
+                            <h3 class="judul-kartu">Eris</h3>
+                            <p class="teks-kartu-kecil">Berukuran hampir sama dengan Pluto namun lebih berat. Penemuannya pada 2005 memicu IAU memperbarui syarat definisi planet.</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-kecil">
+                            <span class="label-wilayah teks-ungu">Sabuk Kuiper</span>
+                            <h3 class="judul-kartu">Haumea</h3>
+                            <p class="teks-kartu-kecil">Memiliki bentuk lonjong menyerupai telur karena kecepatan rotasinya sangat cepat (satu hari di sana hanya sekitar 4 jam).</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-kecil">
+                            <span class="label-wilayah teks-ungu">Sabuk Kuiper</span>
+                            <h3 class="judul-kartu">Makemake</h3>
+                            <p class="teks-kartu-kecil">Planet kerdil paling terang kedua di Sabuk Kuiper setelah Pluto dengan permukaan es metana yang sangat dingin.</p>
+                        </article>
+                    </div>
+
+                    <div class="kotak-info-pluto">
+                        <div class="ikon-info">💡</div>
+                        <div>
+                            <h4 class="judul-info-pluto">Kenapa Pluto Tidak Lagi Dianggap Planet Utama?</h4>
+                            <p class="teks-info-pluto">
+                                Pada tahun <strong>2006</strong>, Persatuan Astronomi Internasional (IAU) menetapkan 3 syarat planet: (1) mengorbit Matahari, (2) berbentuk bulat, dan (3) <strong>membersihkan jalur orbitnya</strong> dari benda lain. Pluto memenuhi dua syarat pertama, tetapi orbitnya masih berbagi dengan banyak objek es di Sabuk Kuiper sehingga diklasifikasikan sebagai <em>Planet Kerdil</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Eksoplanet -->
+                <div id="kontenTabEkso" class="tersembunyi">
+                    <div class="grid-tiga">
+                        <article class="kartu-kosmik">
+                            <span class="tag-kategori tag-hijau">Planet Batuan Raksasa</span>
+                            <h3 class="judul-kartu">Super-Earth (Bumi Super)</h3>
+                            <p class="teks-kartu">Eksoplanet berbatu yang massanya lebih besar daripada Bumi, namun lebih ringan daripada Neptunus. Beberapa di antaranya berada di zona laik huni bintangnya.</p>
+                        </article>
+                        <article class="kartu-kosmik">
+                            <span class="tag-kategori tag-kuning">Suhu Ekstrem</span>
+                            <h3 class="judul-kartu">Hot Jupiter (Jupiter Panas)</h3>
+                            <p class="teks-kartu">Planet raksasa gas seukuran Jupiter yang mengorbit sangat dekat dengan bintang induknya sehingga satu tahun di sana hanya berlangsung beberapa hari Bumi.</p>
+                        </article>
+                        <article class="kartu-kosmik">
+                            <span class="tag-kategori tag-ungu">Tanpa Bintang Induk</span>
+                            <h3 class="judul-kartu">Rogue Planet (Planet Pengembara)</h3>
+                            <p class="teks-kartu">Planet yang terlempar dari sistem bintang asalnya dan melayang bebas sendirian mengarungi ruang gelap galaksi tanpa mengorbit bintang mana pun.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 5: FENOMENA TATA SURYA (#fenomena)
+             ================================================================== -->
+        <section id="fenomena" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <div class="kepala-bagian tengah">
+                    <span class="label-bagian teks-biru">Peristiwa Kosmik</span>
+                    <h2 class="judul-bagian">Fenomena Menarik di Tata Surya</h2>
+                </div>
+
+                <div class="grid-empat">
+                    <article class="kartu-kosmik">
+                        <div class="ikon-fenomena">🌑</div>
+                        <h3 class="judul-kartu">Gerhana Matahari & Bulan</h3>
+                        <p class="teks-kartu">Terjadi saat Matahari, Bumi, dan Bulan berada pada satu garis lurus sehingga bayangan Bulan jatuh ke Bumi atau bayangan Bumi menutupi Bulan.</p>
+                    </article>
+
+                    <article class="kartu-kosmik">
+                        <div class="ikon-fenomena">🌠</div>
+                        <h3 class="judul-kartu">Hujan Meteor</h3>
+                        <p class="teks-kartu">Peristiwa ketika puluhan batuan kecil luar angkasa (<em>meteoroid</em>) memasuki atmosfer Bumi dan terbakar membentuk kilatan "bintang jatuh".</p>
+                    </article>
+
+                    <article class="kartu-kosmik">
+                        <div class="ikon-fenomena">☄️</div>
+                        <h3 class="judul-kartu">Komet (Bintang Berekor)</h3>
+                        <p class="teks-kartu">Bola es dan debu yang mengorbit Matahari dalam lintasan lonjong. Saat mendekati Matahari, esnya menguap membentuk ekor cahaya panjang.</p>
+                    </article>
+
+                    <article class="kartu-kosmik">
+                        <div class="ikon-fenomena">🪐</div>
+                        <h3 class="judul-kartu">Cincin Planet Raksasa</h3>
+                        <p class="teks-kartu">Miliaran partikel es dan batuan yang mengorbit ekuator Jupiter, Saturnus, Uranus, dan Neptunus akibat gaya gravitasi planet induknya.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 6: EKSPLORASI MISI ANTARIKSA & FAKTA UNIK (#eksplorasi)
+             ================================================================== -->
+        <section id="eksplorasi" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <!-- Misi Antariksa -->
+                <div class="blok-misi">
+                    <div class="kepala-bagian tengah">
+                        <span class="label-bagian teks-kuning">Jejak Penjelajahan Manusia</span>
+                        <h2 class="judul-bagian">Misi Antariksa Legendaris</h2>
+                    </div>
+
+                    <div class="grid-empat">
+                        <article class="kartu-kosmik garis-kuning">
+                            <span class="tag-kategori tag-kuning">1969 • NASA</span>
+                            <h3 class="judul-kartu">Apollo 11</h3>
+                            <p class="teks-kartu">Misi bersejarah yang mendaratkan manusia pertama di Bulan (Neil Armstrong & Buzz Aldrin) serta membawa pulang 21,5 kg sampel batuan bulan.</p>
+                        </article>
+
+                        <article class="kartu-kosmik garis-biru">
+                            <span class="tag-kategori tag-biru">1977 • NASA</span>
+                            <h3 class="judul-kartu">Voyager 1 & 2</h3>
+                            <p class="teks-kartu">Wahana penjelajah planet raksasa luar yang kini menjadi objek buatan manusia terjauh di ruang antarbintang, membawa piringan emas <em>Golden Record</em>.</p>
+                        </article>
+
+                        <article class="kartu-kosmik garis-merah">
+                            <span class="tag-kategori tag-merah">2020–Kini • NASA</span>
+                            <h3 class="judul-kartu">Rover Perseverance</h3>
+                            <p class="teks-kartu">Robot penjelajah canggih di Kawah Jezero, Mars, yang mencari jejak kehidupan purba, memproduksi oksigen dari udara Mars, dan menerbangkan helikopter <em>Ingenuity</em>.</p>
+                        </article>
+
+                        <article class="kartu-kosmik garis-ungu">
+                            <span class="tag-kategori tag-ungu">2021–Kini • NASA/ESA/CSA</span>
+                            <h3 class="judul-kartu">Teleskop James Webb</h3>
+                            <p class="teks-kartu">Teleskop inframerah bercermin emas 6,5 meter yang mampu melihat galaksi paling awal alam semesta dan meneliti atmosfer eksoplanet.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Tahukah Kamu (Fakta Unik) -->
+                <div>
+                    <div class="kepala-bagian tengah">
+                        <span class="label-bagian teks-biru">Tahukah Kamu?</span>
+                        <h2 class="judul-bagian">Fakta Unik Luar Angkasa</h2>
+                    </div>
+
+                    <div class="grid-empat">
+                        <article class="kartu-kosmik kartu-fakta">
+                            <div class="ikon-fakta">💎</div>
+                            <h3 class="judul-kartu">Hujan Berlian</h3>
+                            <p class="teks-kartu-kecil">Tekanan ekstrem di atmosfer dalam <strong>Uranus</strong> dan <strong>Neptunus</strong> diperkirakan mengubah karbon menjadi hujan kristal berlian cair.</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-fakta">
+                            <div class="ikon-fakta">👣</div>
+                            <h3 class="judul-kartu">Jejak Kaki Abadi</h3>
+                            <p class="teks-kartu-kecil">Jejak sepatu astronaut Apollo di permukaan <strong>Bulan</strong> dapat bertahan jutaan tahun karena tidak ada angin maupun air di sana.</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-fakta">
+                            <div class="ikon-fakta">🔇</div>
+                            <h3 class="judul-kartu">Hening Total</h3>
+                            <p class="teks-kartu-kecil">Luar angkasa merupakan ruang hampa tanpa udara sebagai perantara suara, sehingga suasana di luar angkasa benar-benar sunyi.</p>
+                        </article>
+                        <article class="kartu-kosmik kartu-fakta">
+                            <div class="ikon-fakta">⏱️</div>
+                            <h3 class="judul-kartu">Cahaya Butuh Waktu</h3>
+                            <p class="teks-kartu-kecil">Cahaya Matahari menempuh jarak 150 juta km selama sekitar <strong>8 menit 20 detik</strong> untuk sampai ke mata kita di Bumi.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             BAGIAN 7: KAMUS MINI & QUIZ TATA SURYA (#quiz)
+             ================================================================== -->
+        <section id="quiz" class="bagian-edukasi">
+            <div class="wadah-konten">
+                <div class="grid-kamus-kuis">
+                    <!-- Kamus Mini Astronomi -->
+                    <div class="kartu-kosmik kotak-kamus">
+                        <div class="kepala-kamus">
+                            <div>
+                                <span class="label-bagian teks-biru">Glosarium Pelajar</span>
+                                <h3 class="judul-kartu-besar">Kamus Mini Astronomi</h3>
+                            </div>
+                            <span class="ikon-buku">📖</span>
+                        </div>
+
+                        <div class="bungkus-cari-kamus">
+                            <input
+                                type="text"
+                                id="inputCariKamus"
+                                placeholder="Cari istilah (misal: Orbit, Rotasi, Tahun Cahaya)..."
+                                class="input-cari-kamus"
+                            >
+                        </div>
+
+                        <div id="daftarKamus" class="daftar-kamus"></div>
+                    </div>
+
+                    <!-- Mini Kuis Tata Surya -->
+                    <div class="kartu-kosmik kotak-kuis">
+                        <div class="kepala-kuis">
+                            <div>
+                                <span class="label-bagian teks-kuning">Evaluasi Belajar</span>
+                                <h3 class="judul-kartu-besar">Uji Pemahaman Tata Surya</h3>
+                            </div>
+                            <span id="lencanaProgresKuis" class="lencana-progres">Soal 1 dari 5</span>
+                        </div>
+
+                        <div id="badanKuis">
+                            <h4 id="pertanyaanKuis" class="teks-pertanyaan"></h4>
+                            <div id="opsiKuis" class="daftar-opsi"></div>
+
+                            <div id="umpanBalikKuis" class="kotak-umpan-balik tersembunyi"></div>
+
+                            <div class="baris-tombol-kuis">
+                                <button id="tombolSoalBerikutnya" type="button" class="btn-explore tersembunyi">
+                                    Soal Berikutnya &rarr;
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="hasilKuis" class="layar-hasil-kuis tersembunyi">
+                            <div class="emoji-hasil" id="emojiHasil">🏆</div>
+                            <h4 class="judul-hasil">Kuis Selesai!</h4>
+                            <p class="teks-pengantar-skor">Skor akhir kamu pada kuis Planet Explorer adalah:</p>
+                            <div class="kotak-skor-akhir" id="teksSkorAkhir">100 / 100</div>
+                            <p id="pesanHasil" class="pesan-skor"></p>
+                            <button id="tombolUlangKuis" type="button" class="btn-explore">
+                                Ulangi Kuis
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         FOOTER
+         ====================================================================== -->
+    <footer class="footer-utama">
+        <div class="wadah-konten">
+            <div class="grid-footer">
+                <div>
+                    <a class="logo" href="#beranda">Explorer</a>
+                    <p class="deskripsi-footer">
+                        Website edukasi tata surya yang dirancang untuk pelajar agar mengenal planet, Matahari, Bulan, dan fenomena luar angkasa secara sederhana, visual, dan menyenangkan.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="judul-footer">Navigasi Cepat</h4>
+                    <ul class="tautan-footer">
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#matahari">Matahari & Bulan</a></li>
+                        <li><a href="#planet">Jelajah 8 Planet</a></li>
+                        <li><a href="#fenomena">Fenomena Tata Surya</a></li>
+                        <li><a href="#quiz">Kuis Tata Surya</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="judul-footer">Referensi Data Astronomi</h4>
+                    <ul class="referensi-footer">
+                        <li>• NASA Science — Solar System Exploration</li>
+                        <li>• European Space Agency (ESA) Space Kids</li>
+                        <li>• International Astronomical Union (IAU)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hak-cipta">
+                <p>© 2026 Planet Explorer — Media Edukasi Tata Surya untuk Pelajar.</p>
+                <p>Dibuat untuk menumbuhkan rasa ingin tahu terhadap ilmu antariksa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         MODAL DETAIL PLANET
+         ====================================================================== -->
+    <div id="modalPlanet" class="latar-modal tersembunyi" role="dialog" aria-modal="true" aria-labelledby="namaModalPlanet">
+        <div class="kartu-kosmik kotak-modal">
+            <button id="tombolTutupModal" type="button" aria-label="Tutup Detail" class="tombol-tutup-modal">
+                ✕
+            </button>
+
+            <div class="kepala-modal">
+                <div id="visualModalPlanet" class="wadah-foto-modal"></div>
+                <div>
+                    <span id="kategoriModalPlanet" class="tag-kategori tag-biru"></span>
+                    <h3 id="namaModalPlanet" class="judul-kartu-besar"></h3>
+                    <p id="julukanModalPlanet" class="julukan-planet"></p>
+                </div>
+            </div>
+
+            <p id="deskripsiModalPlanet" class="teks-kartu jarak-bawah"></p>
+
+            <div class="grid-data-modal">
+                <div>
+                    <span class="label-kecil">Jarak ke Matahari</span>
+                    <strong id="jarakModal" class="nilai-tebal"></strong>
+                </div>
+                <div>
+                    <span class="label-kecil">Lama Rotasi (1 Hari)</span>
+                    <strong id="rotasiModal" class="nilai-tebal"></strong>
+                </div>
+                <div>
+                    <span class="label-kecil">Lama Revolusi (1 Tahun)</span>
+                    <strong id="revolusiModal" class="nilai-tebal"></strong>
+                </div>
+                <div>
+                    <span class="label-kecil">Suhu Permukaan/Awan</span>
+                    <strong id="suhuModal" class="nilai-tebal teks-kuning"></strong>
+                </div>
+                <div>
+                    <span class="label-kecil">Jumlah Satelit Alami</span>
+                    <strong id="satelitModal" class="nilai-tebal teks-biru"></strong>
+                </div>
+                <div>
+                    <span class="label-kecil">Urutan Orbit</span>
+                    <strong id="urutanModal" class="nilai-tebal"></strong>
+                </div>
+            </div>
+
+            <div class="kotak-catatan catatan-kuning">
+                <strong>✨ Fakta Unik:</strong> <span id="faktaModal"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
