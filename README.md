@@ -1,6 +1,6 @@
 # 🌌 Planet Explorer
 
-Planet Explorer adalah website edukasi yang mengajak pengguna mengenal dan menjelajahi tata surya, khususnya delapan planet, melalui informasi yang sederhana dan menarik.
+Planet Explorer adalah website edukasi yang mengajak pengguna mengenal dan menjelajahi tata surya, khususnya delapan planet, melalui informasi yang sederhana, menarik, dan mudah dipahami.
 
 Website ini dibuat sebagai proyek Pemrograman Web untuk membantu pelajar mempelajari tata surya dengan cara yang lebih menyenangkan.
 
@@ -18,15 +18,16 @@ Website ini dibuat sebagai proyek Pemrograman Web untuk membantu pelajar mempela
 - CSS
 - JavaScript
 
+## 🌐 Link Proyek
+
+- **Website:** [Planet Explorer](https://lulu-nava.github.io/aboutplanet/)
+- **Repository GitHub:** [aboutplanet](https://github.com/lulu-nava/aboutplanet)
+
 ## 🚀 Cara Menjalankan
 
 1. Download atau clone repository ini.
 2. Buka folder proyek.
 3. Jalankan file `index.html` melalui browser.
-
-## 🌐 Website
-
-[Klik di sini untuk mengunjungi Planet Explorer](https://lulu-nava.github.io/aboutplanet/)
 
 ## 👩‍💻 Pengembang
 
