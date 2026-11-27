@@ -53,7 +53,7 @@ const dataPlanet = [
         nama: 'Bumi',
         julukan: 'Planet Biru',
         kategori: 'Kebumian',
-        gambar: 'image/mm.gif',
+        gambar: 'image/bumi.png',
         jarak: '149,6 Juta km',
         rotasi: '24 Jam',
         revolusi: '365,25 Hari',
